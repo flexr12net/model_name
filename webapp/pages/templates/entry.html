@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{the_title}}</h2>
+<form method='POST' action='/baseadd'>
+<table>
+    <p>
+    Используйте данную формы для добавления оборудования:</p>
+    <tr><td>Model_uid:</td><td><imput name='model_uid' type='TEXT' width='60'</td></tr>
+    <tr><td>Model_name:</td><td><imput name='model_name' type='TEXT'</td></tr>
+    <tr><td>Model_brand:</td><td><imput name='model_brand' type='TEXT'</td></tr>
+    </table>
+    <p>Нажмите "Добавить" для добавления блока в базу данных:</p>
+    <p><input value='Добавить' type='SUBMIT'</p>
+    </form>
+
+{% endblock %}
